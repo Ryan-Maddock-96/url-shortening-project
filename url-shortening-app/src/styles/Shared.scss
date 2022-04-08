@@ -46,3 +46,24 @@
   }
   
   /*#endregion*/
+
+
+  /*#region Sections*/
+
+  section {
+    min-height: 100vh;
+    background: #eff1f7;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 100px 50px;
+
+    .title {
+      max-width: 500px;
+      color: $very-dark-violet;
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 0 auto 50px;
+    }
+  }
+
+  /*#endregion*/
