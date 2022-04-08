@@ -6,7 +6,7 @@
 
 nav {
     @extend %nav-flex;
-    padding: 20px 100px;
+    padding: 20px 150px;
 
     .menu {
         display: flex;
@@ -30,8 +30,14 @@ nav {
     }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: $tablet) {
     nav {
         padding: 20px 50px;
+    }
+}
+
+@media  only screen and (max-width: $mobile) {
+    nav {
+        padding: 20px 25px; 
     }
 }
