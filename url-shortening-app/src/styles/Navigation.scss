@@ -6,7 +6,8 @@
 
 nav {
     @extend %nav-flex;
-    padding: 20px 150px;
+    padding: 20px 0;
+    @extend .padMe;
 
     .menu {
         display: flex;

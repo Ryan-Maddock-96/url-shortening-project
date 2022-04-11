@@ -3,18 +3,22 @@ $mobile-spacing: 75px;
 
 .statItems {
     display: flex;
-    justify-content: center;
     align-items: flex-start;
     gap: $spacing;
-    margin: 50px 0;
+    margin: 75px 0 0;
     
     .item {
         position: relative;
         text-align: left;
         background: #fff;  
-        max-width: 500px;
-        padding: 50px 25px 25px;
+        flex-grow: 1;
+        padding: 50px 25px 35px;
         box-sizing: border-box;
+
+        .title {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
 
         &:nth-child(2) {
             margin-top: $spacing;

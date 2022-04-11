@@ -51,11 +51,12 @@
   /*#region Sections*/
 
   section {
-    min-height: 100vh;
     background: #eff1f7;
     text-align: center;
     box-sizing: border-box;
-    padding: 100px 50px;
+    padding: 150px 0;
+
+    @extend .padMe;
 
     .title {
       max-width: 500px;
@@ -67,3 +68,25 @@
   }
 
   /*#endregion*/
+
+  /*#region Utility Classes */
+  .padMe {
+    padding-left: 150px!important;
+    padding-right: 150px!important;
+  }
+  /*#endregion*/
+
+@media only screen and (max-width: $tablet) {
+  .padMe {
+    padding-left: 50px!important;
+    padding-right: 50px!important;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .padMe {
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+  }
+}
+

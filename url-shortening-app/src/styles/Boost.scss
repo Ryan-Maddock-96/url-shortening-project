@@ -1,0 +1,19 @@
+.boost {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: $dark-violet;
+    background-image: url('../images/bg-boost-desktop.svg');
+
+    h2 {
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .boost {
+        background-image: url('../images/bg-boost-mobile.svg');
+    }
+}

@@ -1,8 +1,7 @@
 import {useState} from 'react';
-import logo from '../images/logo.svg';
 import {GiHamburgerMenu} from 'react-icons/gi';
 
-const Navigation = () => {
+const Navigation = (props) => {
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -11,7 +10,7 @@ const Navigation = () => {
 
     return (
         <nav>
-            <img src={logo} alt="Shortly Logo"/>
+            <img src={props.logo} alt="Shortly Logo"/>
             {isMobile ? <div className='menu'><GiHamburgerMenu/></div> : ''}
             <div className="links" style={{display: isMobile ? 'none': 'flex'}}>
                 <a>Features</a>

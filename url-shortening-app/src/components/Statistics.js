@@ -29,7 +29,7 @@ const Statistics = () => {
             <div className="statItems">
                 {statItems.map(stat => 
                     <div className='item'>
-                        <div>{stat.title}</div>
+                        <div className='title'>{stat.title}</div>
                         <div>{stat.info}</div>
                         <div className='statIcon'><img src={stat.icon}/></div>
                     </div>

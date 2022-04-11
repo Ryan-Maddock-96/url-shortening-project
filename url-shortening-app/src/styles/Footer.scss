@@ -1,0 +1,40 @@
+Footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    @extend .padMe;
+    background-color: $very-dark-violet;
+
+    & > div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &.socials {
+            flex-direction: row;
+
+            svg {
+                font-size: 1.6rem;
+                margin: 0;
+
+                &:hover {
+                     color: #fff;
+                }
+            }
+        }
+
+        & > div {
+            color: #fff;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 0.8rem;
+
+            &:hover {
+                color :#fff;
+                
+            }
+        }
+    }
+}
