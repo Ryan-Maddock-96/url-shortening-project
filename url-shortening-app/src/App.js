@@ -4,13 +4,19 @@ import Statistics from './components/Statistics';
 import Boost from './components/Boost';
 import Footer from './components/Footer';
 import logo from './images/logo.svg';
+import LinkShorten from './components/LinkShorten';
 
 function App() {
   return (
     <div className="App">
       <Navigation logo={logo}/>
       <Header />
-      <Statistics />
+      
+      <section>
+        <LinkShorten />
+        <Statistics />
+      </section>
+      
       <Boost />
       <Footer logo={logo}/>
     </div>
