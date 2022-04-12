@@ -21,7 +21,7 @@ const Statistics = () => {
         }
     ]
     return (
-        <section>
+        <div className='statContainer'>
             <div className='title'>
                 Advanced Statistics
                 <p>Track how your links are performing accross web with our advanced statistics dashboard</p>
@@ -35,7 +35,7 @@ const Statistics = () => {
                     </div>
                 )}
             </div>
-        </section>
+        </div>
     );
 }
 

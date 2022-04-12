@@ -22,7 +22,15 @@ const LinkShorten = () => {
                 <button onClick={fetchData}>Shorten</button>
             </div>
 
-            {[...shortLinks].map(link => <div className='linkItem'>{link.short_link}</div>)}
+            {
+                [...shortLinks].map(link => 
+                    <div className='linkItem'>
+                        <span>{link.original_link}</span>
+                        <span>{link.short_link}</span>
+                        <button>Copy Link</button>
+                    </div>
+                )
+            }
         </div>
     );
 }

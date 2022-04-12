@@ -1,18 +1,23 @@
 $spacing: 35px;
 $mobile-spacing: 75px;
 
+
+.statContainer {
+    padding: 100px 0;
+}
+
 .statItems {
     display: flex;
     align-items: flex-start;
     gap: $spacing;
-    margin: 75px 0 0;
+    margin: 50px 0 0;
     
     .item {
         position: relative;
         text-align: left;
         background: #fff;  
         flex-grow: 1;
-        padding: 50px 25px 35px;
+        padding: 35px 25px 35px;
         box-sizing: border-box;
 
         .title {
@@ -43,11 +48,11 @@ $mobile-spacing: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
-        top: -40px;
-        height: 80px;
-        width: 80px;
+        top: -35px;
+        height: 70px;
+        width: 70px;
         border-radius: 50%;
-        background: $very-dark-violet;
+        background: $dark-violet;
     }
 }
 
